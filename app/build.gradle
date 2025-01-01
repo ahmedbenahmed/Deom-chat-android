@@ -39,8 +39,8 @@ android {
 
         // mayor.minor.hotfix.increment (for increment: 01-50=Alpha / 51-89=RC / 90-99=stable)
         // xx   .xxx  .xx    .xx
-        versionCode 210000007
-        versionName "21.0.0 Alpha 07"
+        versionCode 11
+        versionName "21.1.0"
 
         flavorDimensions "default"
         renderscriptTargetApi 19
@@ -49,15 +49,15 @@ android {
         productFlavors {
             // used for f-droid
             generic {
-                applicationId 'com.nextcloud.talk2'
+                applicationId 'com.slnee.talk'
                 dimension "default"
             }
             gplay {
-                applicationId 'com.nextcloud.talk2'
+                applicationId 'com.slnee.talk'
                 dimension "default"
             }
             qa {
-                applicationId "com.nextcloud.talk2.qa"
+                applicationId "com.slnee.talk.qa"
                 dimension "default"
                 versionCode 1
                 versionName "1"
@@ -99,6 +99,7 @@ android {
 
     buildTypes {
         release {
+            debuggable false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

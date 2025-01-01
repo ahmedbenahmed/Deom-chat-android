@@ -162,7 +162,7 @@ class SettingsActivity :
         setupDiagnose()
         setupPrivacyUrl()
         setupSourceCodeUrl()
-        binding.settingsVersionSummary.text = String.format("v" + BuildConfig.VERSION_NAME)
+   //     binding.settingsVersionSummary.text = String.format("v" + BuildConfig.VERSION_NAME)
 
         setupPhoneBookIntegration()
 
@@ -181,9 +181,9 @@ class SettingsActivity :
 
         loadCapabilitiesAndUpdateSettings()
 
-        binding.settingsVersion.setOnClickListener {
-            sendLogs()
-        }
+        // binding.settingsVersion.setOnClickListener {
+        //     sendLogs()
+        // }
 
         if (!TextUtils.isEmpty(currentUser!!.clientCertificate)) {
             binding.settingsClientCertTitle.setText(R.string.nc_client_cert_change)
@@ -497,18 +497,18 @@ class SettingsActivity :
     }
 
     private fun setupSourceCodeUrl() {
-        if (!TextUtils.isEmpty(resources!!.getString(R.string.nc_source_code_url))) {
-            binding.settingsSourceCode.setOnClickListener {
-                startActivity(
-                    Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse(resources!!.getString(R.string.nc_source_code_url))
-                    )
-                )
-            }
-        } else {
-            binding.settingsSourceCode.visibility = View.GONE
-        }
+        // if (!TextUtils.isEmpty(resources!!.getString(R.string.nc_source_code_url))) {
+        //     binding.settingsSourceCode.setOnClickListener {
+        //         startActivity(
+        //             Intent(
+        //                 Intent.ACTION_VIEW,
+        //                 Uri.parse(resources!!.getString(R.string.nc_source_code_url))
+        //             )
+        //         )
+        //     }
+        // } else {
+        //     binding.settingsSourceCode.visibility = View.GONE
+        // }
     }
 
     private fun setupDiagnose() {
@@ -519,33 +519,33 @@ class SettingsActivity :
     }
 
     private fun setupPrivacyUrl() {
-        if (!TextUtils.isEmpty(resources!!.getString(R.string.nc_privacy_url))) {
-            binding.settingsPrivacy.setOnClickListener {
-                startActivity(
-                    Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse(resources!!.getString(R.string.nc_privacy_url))
-                    )
-                )
-            }
-        } else {
-            binding.settingsPrivacy.visibility = View.GONE
-        }
+        // if (!TextUtils.isEmpty(resources!!.getString(R.string.nc_privacy_url))) {
+        //     binding.settingsPrivacy.setOnClickListener {
+        //         startActivity(
+        //             Intent(
+        //                 Intent.ACTION_VIEW,
+        //                 Uri.parse(resources!!.getString(R.string.nc_privacy_url))
+        //             )
+        //         )
+        //     }
+        // } else {
+        //     binding.settingsPrivacy.visibility = View.GONE
+        // }
     }
 
     private fun setupLicenceSetting() {
-        if (!TextUtils.isEmpty(resources!!.getString(R.string.nc_gpl3_url))) {
-            binding.settingsLicence.setOnClickListener {
-                startActivity(
-                    Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse(resources!!.getString(R.string.nc_gpl3_url))
-                    )
-                )
-            }
-        } else {
-            binding.settingsLicence.visibility = View.GONE
-        }
+        // if (!TextUtils.isEmpty(resources!!.getString(R.string.nc_gpl3_url))) {
+        //     binding.settingsLicence.setOnClickListener {
+        //         startActivity(
+        //             Intent(
+        //                 Intent.ACTION_VIEW,
+        //                 Uri.parse(resources!!.getString(R.string.nc_gpl3_url))
+        //             )
+        //         )
+        //     }
+        // } else {
+        //     binding.settingsLicence.visibility = View.GONE
+        // }
     }
 
     private fun setupClientCertView() {
@@ -747,7 +747,7 @@ class SettingsActivity :
         binding.run {
             listOf(
                 settingsNotificationsTitle,
-                settingsAboutTitle,
+                // settingsAboutTitle,
                 settingsAdvancedTitle,
                 settingsAppearanceTitle,
                 settingsPrivacyTitle

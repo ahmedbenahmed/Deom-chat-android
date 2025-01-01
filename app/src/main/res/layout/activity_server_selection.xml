@@ -65,6 +65,8 @@
                     android:minLines="1"
                     android:paddingStart="16dp"
                     android:paddingEnd="55dp"
+                    android:text="drive.mydeom.com"
+                    android:focusable="false"
                     android:scrollbars="vertical"
                     android:textColor="@color/white"
                     android:textColorHint="#80FFFFFF">
