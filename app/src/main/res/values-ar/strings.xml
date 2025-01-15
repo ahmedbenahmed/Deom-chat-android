@@ -463,8 +463,9 @@
     <string name="nc_settings_read_privacy_title">قراءة الحالة</string>
     <string name="nc_settings_reauthorize">إعادة تفويض الحساب</string>
     <string name="nc_settings_remove">حذف</string>
-    <string name="nc_settings_remove_account">حذف حساب</string>
-    <string name="nc_settings_remove_confirmation">يرجى تأكيد رغبتك لإزالة الحساب الحالي.</string>
+    <string name="nc_settings_change_language">تغيير اللغة</string>
+    <string name="nc_settings_remove_account">تسجيل خروج</string>
+    <string name="nc_settings_remove_confirmation">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
     <string name="nc_settings_screen_lock_desc">اقفل %1$s بقفل شاشة أندرويد أو باستخدام القياسات الحيوية</string>
     <string name="nc_settings_screen_lock_timeout_title">انتهت مهلة قفل الشاشة </string>
     <string name="nc_settings_screen_lock_title">قفل الشاشة</string>

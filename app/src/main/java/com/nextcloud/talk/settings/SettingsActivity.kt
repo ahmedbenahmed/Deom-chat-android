@@ -211,6 +211,11 @@ class SettingsActivity :
             binding.settingsRemoveAccount.setOnClickListener {
                 showRemoveAccountWarning()
             }
+            binding.changeLanguage.setOnClickListener {
+                val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                intent.setData(Uri.parse("package:$packageName"))
+                startActivity(intent)
+            }
         }
         setupMessageView()
 

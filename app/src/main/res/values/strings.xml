@@ -91,8 +91,9 @@ How to translate with transifex:
     <string name="nc_client_cert_setup">Set up client certificate</string>
     <string name="nc_client_cert_change">Change client certificate</string>
     <string name="nc_settings_remove">Remove</string>
-    <string name="nc_settings_remove_confirmation">Please confirm your intent to remove the current account.</string>
-    <string name="nc_settings_remove_account">Remove account</string>
+    <string name="nc_settings_remove_confirmation">Are you sure you want to sign out?</string>
+    <string name="nc_settings_remove_account">Sign out</string>
+    <string name="nc_settings_change_language">Change Language</string>
     <string name="nc_settings_server_eol_title">Unsupported server</string>
     <string name="nc_settings_server_eol">The server version is too old and not supported by this version of the Android app</string>
     <string name="nc_settings_server_almost_eol">The server version is very old and will not be supported in the next release!</string>

@@ -152,6 +152,23 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/change_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?android:attr/selectableItemBackground">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:text="@string/nc_settings_change_language"
+                    android:textSize="@dimen/headline_text_size"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/settings_appearance_category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
